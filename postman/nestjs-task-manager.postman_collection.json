@@ -9,10 +9,52 @@
 			"name": "Tasks",
 			"item": [
 				{
-					"name": "Get all tasks",
+					"name": "Get tasks",
 					"request": {
 						"method": "GET",
 						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks"
+							]
+						},
+						"description": "GET /"
+					},
+					"response": []
+				},
+				{
+					"name": "Create task",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "New task title",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "New task description",
+									"type": "text"
+								}
+							]
+						},
 						"url": {
 							"raw": "http://localhost:3000/tasks",
 							"protocol": "http",
