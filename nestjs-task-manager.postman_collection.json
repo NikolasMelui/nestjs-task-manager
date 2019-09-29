@@ -1,0 +1,30 @@
+{
+	"info": {
+		"_postman_id": "b19e53d4-b7b7-497f-a715-e3fdb1cdebf7",
+		"name": "nestjs-task-manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					]
+				},
+				"description": "GET /"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
