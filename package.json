@@ -1,7 +1,7 @@
 {
   "name": "nestjs-task-manager",
   "version": "0.0.1",
-  "description": "Task manager build on NestJS framework",
+  "description": "Task manager build with NestJS framework",
   "author": "nikolasmelui",
   "license": "MIT",
   "scripts": {
