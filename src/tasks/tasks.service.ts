@@ -8,11 +8,11 @@ import { CreateTaskDto } from './dto/create-tesk.dto';
 export class TasksService {
   private tasks: Task[] = fakeTasks;
 
-  getAllTasks(): Task[] {
+  getTasks(): Task[] {
     return this.tasks;
   }
 
-  getTaskById(id: string): Task {
+  getTask(id: string): Task {
     return this.tasks.find(task => task.id === id);
   }
 
