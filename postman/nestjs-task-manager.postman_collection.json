@@ -29,6 +29,27 @@
 					"response": []
 				},
 				{
+					"name": "Get task",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/tasks/21",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"21"
+							]
+						},
+						"description": "GET /"
+					},
+					"response": []
+				},
+				{
 					"name": "Create task",
 					"request": {
 						"method": "POST",
