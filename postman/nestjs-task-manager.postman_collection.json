@@ -6,24 +6,152 @@
 	},
 	"item": [
 		{
-			"name": "test",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:3000/",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						""
-					]
+			"name": "Tasks",
+			"item": [
+				{
+					"name": "Get tasks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks"
+							]
+						},
+						"description": "GET /"
+					},
+					"response": []
 				},
-				"description": "GET /"
-			},
-			"response": []
+				{
+					"name": "Get task",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/tasks/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"1"
+							]
+						},
+						"description": "GET /"
+					},
+					"response": []
+				},
+				{
+					"name": "Create task",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "New task title",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "New task description",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks"
+							]
+						},
+						"description": "GET /"
+					},
+					"response": []
+				},
+				{
+					"name": "Get task Copy",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "status",
+									"value": "'IN_PROGRESS'",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/tasks/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"1"
+							]
+						},
+						"description": "GET /"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete task",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/tasks/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"1"
+							]
+						},
+						"description": "GET /"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
 		}
 	],
 	"protocolProfileBehavior": {}
