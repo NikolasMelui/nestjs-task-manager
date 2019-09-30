@@ -40,7 +40,7 @@ export class TasksService {
     const found = this.tasks.find(task => task.id === id);
 
     if (!found) {
-      throw new NotFoundException(`The task with ID ${id} was not found`);
+      throw new NotFoundException(`The task with ID "${id}" was not found`);
     }
 
     return found;
