@@ -39,7 +39,7 @@
 					"response": []
 				},
 				{
-					"name": "Get task",
+					"name": "Get task by ID",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -102,7 +102,7 @@
 					"response": []
 				},
 				{
-					"name": "Get task Copy",
+					"name": "Change task status by ID",
 					"request": {
 						"method": "PATCH",
 						"header": [
@@ -140,7 +140,7 @@
 					"response": []
 				},
 				{
-					"name": "Delete task",
+					"name": "Delete task by ID",
 					"request": {
 						"method": "DELETE",
 						"header": [],
