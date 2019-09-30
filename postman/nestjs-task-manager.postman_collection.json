@@ -109,8 +109,8 @@
 							{
 								"key": "Content-Type",
 								"name": "Content-Type",
-								"value": "application/x-www-form-urlencoded",
-								"type": "text"
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
 							}
 						],
 						"body": {
@@ -118,7 +118,7 @@
 							"urlencoded": [
 								{
 									"key": "status",
-									"value": "'IN_PROGRESS'",
+									"value": "IN_PROGRESS",
 									"type": "text"
 								}
 							]
