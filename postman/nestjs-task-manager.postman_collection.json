@@ -14,7 +14,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/tasks",
+							"raw": "http://localhost:3000/tasks?status=IN_PROGRESS&search=task",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -22,6 +22,16 @@
 							"port": "3000",
 							"path": [
 								"tasks"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "IN_PROGRESS"
+								},
+								{
+									"key": "search",
+									"value": "task"
+								}
 							]
 						},
 						"description": "GET /"
@@ -29,7 +39,7 @@
 					"response": []
 				},
 				{
-					"name": "Get task",
+					"name": "Get task by ID",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -92,15 +102,15 @@
 					"response": []
 				},
 				{
-					"name": "Get task Copy",
+					"name": "Change task status by ID",
 					"request": {
 						"method": "PATCH",
 						"header": [
 							{
 								"key": "Content-Type",
 								"name": "Content-Type",
-								"value": "application/x-www-form-urlencoded",
-								"type": "text"
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
 							}
 						],
 						"body": {
@@ -108,7 +118,7 @@
 							"urlencoded": [
 								{
 									"key": "status",
-									"value": "'IN_PROGRESS'",
+									"value": "IN_PROGRESS",
 									"type": "text"
 								}
 							]
@@ -130,7 +140,7 @@
 					"response": []
 				},
 				{
-					"name": "Delete task",
+					"name": "Delete task by ID",
 					"request": {
 						"method": "DELETE",
 						"header": [],
