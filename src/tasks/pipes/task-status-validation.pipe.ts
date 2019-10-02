@@ -3,7 +3,7 @@ import {
   ArgumentMetadata,
   BadRequestException,
 } from '@nestjs/common';
-import { TaskStatus } from '../task.model';
+import { TaskStatus } from '../task-status.enum';
 
 export class TaskStatusValidationPipe implements PipeTransform {
   readonly allowedStatuses = [
@@ -12,9 +12,7 @@ export class TaskStatusValidationPipe implements PipeTransform {
     TaskStatus.DONE,
   ];
 
-  transform(value: any, metadata: ArgumentMetadata) {
-    // console.info(`The metadata is ${metadata}`);
-
+  transform(value: any) {
     const upperCasedValue = value.toUpperCase();
 
     if (!this.isStatusValid(upperCasedValue)) {
