@@ -16,7 +16,7 @@ import { TasksService } from './tasks.service';
 // Models
 import { Task, TaskStatus } from './task.model';
 // DTO
-import { CreateTaskDto } from './dto/create-tesk.dto';
+import { CreateTaskDto } from './dto/create-task.dto';
 import { GetTasksFilterDto } from './dto/get-tasks-filter.dto';
 // Pipes
 import { TaskStatusValidationPipe } from './pipes/task-status-validation.pipe';

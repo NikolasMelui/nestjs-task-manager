@@ -5,7 +5,7 @@ import * as uuid from 'uuid/v1';
 // Models
 import { Task, TaskStatus } from './task.model';
 // DTO
-import { CreateTaskDto } from './dto/create-tesk.dto';
+import { CreateTaskDto } from './dto/create-task.dto';
 import { GetTasksFilterDto } from './dto/get-tasks-filter.dto';
 
 import fakeTasks from './fakeData/tasks';
