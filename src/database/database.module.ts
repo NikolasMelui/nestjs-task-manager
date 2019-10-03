@@ -5,6 +5,7 @@ import { ConfigService } from '../config/config.service';
 
 function DatabaseOrmModule(): DynamicModule {
   const config = new ConfigService().read();
+
   return TypeOrmModule.forRoot({
     type: 'postgres',
     host: config.DB_HOST,
@@ -12,8 +13,9 @@ function DatabaseOrmModule(): DynamicModule {
     database: config.DB_NAME,
     username: config.DB_USERNAME,
     password: config.DB_PASSWORD,
-    entities: [`${__dirname}/../**/*.entity.ts`],
+    entities: ['dist/**/*.entity{.ts,.js}'],
     synchronize: true,
+    logging: true,
   });
 }
 
