@@ -124,7 +124,7 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:3000/tasks/1",
+							"raw": "http://localhost:3000/tasks/5/status",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -132,7 +132,8 @@
 							"port": "3000",
 							"path": [
 								"tasks",
-								"1"
+								"5",
+								"status"
 							]
 						},
 						"description": "GET /"
