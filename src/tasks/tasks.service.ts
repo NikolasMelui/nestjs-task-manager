@@ -40,7 +40,7 @@ export class TasksService {
     return task;
   }
 
-  createTask(createTaskDto: CreateTaskDto) {
+  async createTask(createTaskDto: CreateTaskDto): Promise<Task> {
     return this.taskRepository.createTask(createTaskDto);
   }
 
