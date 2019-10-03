@@ -35,6 +35,10 @@ export class TasksService {
     }
     return found;
   }
+  createTask(createTaskDto: CreateTaskDto) {
+    return this.taskRepository.createTask(createTaskDto);
+  }
+
   // createTask(createTaskDto: CreateTaskDto) {
   //   const { title, description } = createTaskDto;
   //   const task: Task = {
