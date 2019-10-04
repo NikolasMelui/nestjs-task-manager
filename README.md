@@ -1,47 +1,53 @@
 # NestJS-task-manager
 
 ## Description
+
 Task manager build with NestJS framework. Made by [nikolasmelui][nikolasmelui].
 
 ## Installation
 
 ```bash
-$ npm i
+npm i
 ```
 
 ## Running the app
 
 ```bash
 # development
-$ npm run start
+npm run start
 ```
 
 ```bash
 # watch mode
-$ npm run start:dev
+npm run start:dev
 ```
 
 ```bash
 # production mode
-$ npm run start:prod
+npm run start:prod
 ```
 
 ## Test
 
 ```bash
 # unit tests
-$ npm run test
+npm run test
 ```
 
 ```bash
 # e2e tests
-$ npm run test:e2e
+npm run test:e2e
 ```
 
 ```bash
 # test coverage
-$ npm run test:cov
+npm run test:cov
 ```
+
+### Swagger
+
+While the application is running, open your browser and navigate to `${protocol}://${host}:${port}/api`.
+You should see a swagger web page.
 
 #### License
 
@@ -70,5 +76,5 @@ SOFTWARE.
 **From developers 2 developers.**
 [NikolasMelui][nikolasmelui]
 
-[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
-   [nikolasmelui]: <https://github.com/NikolasMelui>
+[//]: # "These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax"
+[nikolasmelui]: https://github.com/NikolasMelui
