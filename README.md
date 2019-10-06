@@ -44,10 +44,27 @@ npm run test:e2e
 npm run test:cov
 ```
 
-### Swagger
+## Swagger
 
 While the application is running, open your browser and navigate to `${protocol}://${host}:${port}/api`.
+
 You should see a swagger web page.
+
+### `DotEnv` module and database connection
+
+To set up the database connection copy the `example.env` file and rename it to to the `${environment}.env`
+
+Development:
+
+```bash
+cp example.env development.env
+```
+
+Production:
+
+```bash
+cp example.env production.env
+```
 
 #### License
 

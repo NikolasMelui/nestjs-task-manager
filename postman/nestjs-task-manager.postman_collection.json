@@ -102,7 +102,7 @@
 					"response": []
 				},
 				{
-					"name": "Change task status by ID",
+					"name": "Change task status",
 					"request": {
 						"method": "PATCH",
 						"header": [
@@ -141,7 +141,7 @@
 					"response": []
 				},
 				{
-					"name": "Delete task by ID",
+					"name": "Delete task",
 					"request": {
 						"method": "DELETE",
 						"header": [],
@@ -160,6 +160,76 @@
 						"description": "GET /"
 					},
 					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "SignUp",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "nikolasmelui",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Password1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/auth/signup",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"signup"
+							]
+						},
+						"description": "Create new User (signup)"
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "312e1197-0950-4739-acb1-b1999db12713",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "eac791a8-e2af-4e88-97c4-c61e2b232fb8",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
 				}
 			],
 			"protocolProfileBehavior": {}

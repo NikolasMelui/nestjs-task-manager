@@ -1,6 +1,6 @@
 {
   "name": "nestjs-task-manager",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Task manager build with NestJS framework",
   "author": "nikolasmelui",
   "license": "MIT",
@@ -25,6 +25,8 @@
     "@nestjs/platform-express": "^6.7.2",
     "@nestjs/swagger": "^3.1.0",
     "@nestjs/typeorm": "^6.2.0",
+    "@types/bcrypt": "^3.0.0",
+    "bcrypt": "^3.0.6",
     "class-transformer": "^0.2.3",
     "class-validator": "^0.10.1",
     "dotenv": "^8.1.0",
