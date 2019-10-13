@@ -11,10 +11,20 @@
 				{
 					"name": "Get tasks",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/tasks?status=IN_PROGRESS&search=task",
+							"raw": "http://localhost:3000/tasks?status=OPEN&search=tas",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -26,11 +36,11 @@
 							"query": [
 								{
 									"key": "status",
-									"value": "IN_PROGRESS"
+									"value": "OPEN"
 								},
 								{
 									"key": "search",
-									"value": "task"
+									"value": "tas"
 								}
 							]
 						},
@@ -62,6 +72,16 @@
 				{
 					"name": "Create task",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [
 							{
@@ -206,6 +226,48 @@
 							]
 						},
 						"description": "Create new User (signup)"
+					},
+					"response": []
+				},
+				{
+					"name": "SignIn",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "nikolasmelui",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Password1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/auth/signin",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"signin"
+							]
+						},
+						"description": "Login with credentials (signIn)"
 					},
 					"response": []
 				}
