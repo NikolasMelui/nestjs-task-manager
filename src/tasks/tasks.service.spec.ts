@@ -2,7 +2,7 @@ import { Test } from '@nestjs/testing';
 import { TasksService } from './tasks.service';
 import { TaskRepository } from './task.repository';
 
-const mockTaskRepository = () => ({});
+const mockTaskRepository = () => ({ getTasks: jest.fn() });
 
 describe('TasksService', () => {
   let tasksService;
@@ -18,5 +18,11 @@ describe('TasksService', () => {
 
     tasksService = await module.get<TasksService>(TasksService);
     taskRepository = await module.get<TaskRepository>(TaskRepository);
+  });
+
+  describe('getTasks', () => {
+    it('gets all tasks from repository', () => {
+      expect(taskRepository.getTasks).not.toHaveBeenCalled();
+    });
   });
 });
